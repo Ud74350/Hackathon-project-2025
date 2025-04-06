@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataViz Pro</title>
+   
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="style199.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>DataViz Pro</h1>
+        <p>Upload your data and generate visualizations easily!</p>
+    </header>
+
+    <main> 
+        <section class="upload-section">
+            <h2>Upload Your Data</h2>
+            <input type="file" id="fileInput" accept=".csv, .json">
+            <button onclick="handleFileUpload()">Upload</button>
+        </section>
+
+        <section class="chart-section">
+            <h2>Generated Chart</h2>
+            <canvas id="chartCanvas"></canvas>
+        </section>
+
+        <section class="filter-section">
+            <h2>Customize Your Chart</h2>
+            <label for="chartType">Select Chart Type:</label>
+            <select id="chartType" onchange="updateChartType()">
+                <option value="bar">Bar Chart</option>
+                <option value="line">Line Chart</option>
+                <option value="pie">Pie Chart</option>
+            </select>
+        </section>
+    </main>
+
+    <script src="script909.js"></script>
+</body>
+</html>
